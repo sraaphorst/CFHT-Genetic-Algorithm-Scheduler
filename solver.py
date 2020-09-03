@@ -50,8 +50,8 @@ class Chromosome:
         :return: a list of the possible earliest start times for the observation in gaps as described above
         """
         obs = self.observations[obs_idx]
-        lower_time = obs.lb_time_constraint
-        upper_time = obs.ub_time_constraint
+        lower_time = obs.lb_time_constraint if obs.lb_time_constraint is not None else self.start_time
+        upper_time = obs.ub_time_constraint if obs.ub_time_constraint is not None else self.stop_time
         obs_time = obs.obs_time
 
         gap_start_times = []
