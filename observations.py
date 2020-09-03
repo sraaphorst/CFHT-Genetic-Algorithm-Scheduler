@@ -3,8 +3,9 @@
 
 from enum import IntEnum
 from dataclasses import dataclass
+from random import randrange, random
 
-from numpy import np
+import numpy as np
 
 
 class Resource(IntEnum):
@@ -23,6 +24,7 @@ class Observation:
     arrays and puts it into this data structure for simpler access.
     """
     obs_idx: int
+    band: str
     resource: Resource
     lb_time_constraint: float
     ub_time_constraint: float
@@ -191,9 +193,39 @@ class Observations:
     #     return slopes
 
     def __getitem__(self, item: int) -> Observation:
-        return Observation(item, self.resources[item],
+        return Observation(item, self.band[item], self.resources[item],
                            self.lb_time_constraints[item], self.ub_time_constraints[item],
                            self.obs_time[item], self.used_time[item], self.allocated_time[item],
                            self.priority[item])
 
 
+def print_observation(o: Observation):
+    print(f"Observation {o.obs_idx}: band={o.band} resource={Resource(o.resource).name} obs_time={o.obs_time} "
+          f"lb={o.lb_time_constraint} ub={o.ub_time_constraint} prio={o.priority}")
+
+
+def print_observations(observations: Observations):
+    for i in range(len(observations)):
+        print_observation(observations[i])
+
+
+def generate_random_observations(num: int) -> Observations:
+    observations = Observations()
+
+    start_time = 0
+    stop_time = 30
+
+    for _ in range(num):
+        band = str(randrange(1, 4))
+        resource = Resource(randrange(3))
+
+        obs_time = randrange(1, 16)
+
+        lb_time_constraint = randrange(0, 30) if random() < 0.1 else None
+        ub_time_constraint = randrange(0, 30) if random() < 0.1 else None
+
+        observations.add_obs(band, resource, obs_time, lb_time_constraint, ub_time_constraint)
+
+    observations.calculate_priority()
+    print_observations(observations)
+    return observations
