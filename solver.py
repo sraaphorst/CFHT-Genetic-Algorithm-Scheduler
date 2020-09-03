@@ -15,7 +15,8 @@ class Chromosome:
     """
     A chromosome for the genetic algorithm, which represents a schedule for a given site.
     """
-    def __init__(self, observations: Observations, resource: Resource, start_time: float, stop_time: float):
+    def __init__(self, observations: Observations, resource: Resource,
+                 start_time: int = DEFAULT_START_TIME, stop_time: int = DEFAULT_STOP_TIME):
         """
         A Chromosome for resource (the site).
 
@@ -198,7 +199,8 @@ class GeneticAlgorithm:
     knapsack can contain which items (observations).
     """
 
-    def __init__(self, observations: Observations, start_time: float = 0, stop_time: float = 30):
+    def __init__(self, observations: Observations,
+                 start_time: int = DEFAULT_START_TIME, stop_time: int = DEFAULT_STOP_TIME):
         """
         Initialize the problem by passing in the observations and the bounds on the time representations
         for observation scheduling.
@@ -270,7 +272,11 @@ class GeneticAlgorithm:
         c2_index = -1
         while c2_index == -1 or c2_index == c1_index:
             c2_index = randrange(0, len(self.chromosomes))
-        return c1_index, c2_index
+
+        if self.chromosomes[c1_index].determine_fitness() > self.chromosomes[c2_index].determine_fitness():
+            return c1_index, c2_index
+        else:
+            return c2_index, c1_index
 
     def _mate(self) -> bool:
         """
@@ -415,6 +421,14 @@ class GeneticAlgorithm:
 
         return False
 
+    @staticmethod
+    def _print_best_fitness(c_gn: Chromosome, c_gs: Chromosome, i: int = None) -> None:
+        print(f"Best fitnesses{f': {i}' if i is not None else ''}")
+        if c_gn is not None:
+            print(f"\tGN: {c_gn.determine_fitness()}\t{c_gn.schedule}")
+        if c_gs is not None:
+            print(f"\tGS: {c_gs.determine_fitness()}\t{c_gs.schedule}")
+
     def run(self, max_iterations: int = 1000) -> Tuple[Chromosome, Chromosome]:
         """
         Run the genetic algorithm prototype and return the best chromosomes for GN and GS.
@@ -439,7 +453,7 @@ class GeneticAlgorithm:
             if best_c_gn is not None and best_c_gs is not None:
                 break
 
-        print(f"Best fitness:   GN: {best_c_gn.determine_fitness()}   GS: {best_c_gs.determine_fitness()}")
+        self._print_best_fitness(best_c_gn, best_c_gs)
         for i in range(max_iterations):
             # Perform all the operations.
             self._mate()
@@ -457,11 +471,10 @@ class GeneticAlgorithm:
                 best_c_gs = self.chromosomes[0]
                 new_best = True
             if new_best:
-                print(f"Best fitness {i}:  GN: {best_c_gn.determine_fitness()}   GS: {best_c_gs.determine_fitness()}")
+                self._print_best_fitness(best_c_gn, best_c_gs, i)
 
-        print("\n\nBest fitnesses:")
-        print(f"GN: {best_c_gn.determine_fitness()}\n\t{best_c_gn.schedule}")
-        print(f"GS: {best_c_gs.determine_fitness()}\n\t{best_c_gs.schedule}")
+        print("\n\nFINAL BEST FITNESSES:")
+        self._print_best_fitness(best_c_gn, best_c_gs)
 
         return best_c_gn, best_c_gs
 
@@ -469,5 +482,5 @@ class GeneticAlgorithm:
 if __name__ == '__main__':
     seed(0)
     o = generate_random_observations(1000)
-    ga = GeneticAlgorithm(o, 0, 30)
+    ga = GeneticAlgorithm(o)
     ga.run()

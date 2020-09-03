@@ -7,6 +7,10 @@ from random import randrange, random
 
 import numpy as np
 
+# Start and stop time of a "day," in minutes.
+DEFAULT_START_TIME = 0
+DEFAULT_STOP_TIME = 600
+
 
 class Resource(IntEnum):
     """
@@ -209,20 +213,19 @@ def print_observations(observations: Observations):
         print_observation(observations[i])
 
 
-def generate_random_observations(num: int) -> Observations:
+def generate_random_observations(num: int,
+                                 start_time: int = DEFAULT_START_TIME,
+                                 stop_time: int = DEFAULT_STOP_TIME) -> Observations:
     observations = Observations()
-
-    start_time = 0
-    stop_time = 30
 
     for _ in range(num):
         band = str(randrange(1, 4))
         resource = Resource(randrange(3))
 
-        obs_time = randrange(1, 16)
+        obs_time = randrange(30, 120)
 
-        lb_time_constraint = randrange(0, 30) if random() < 0.1 else None
-        ub_time_constraint = randrange(0, 30) if random() < 0.1 else None
+        lb_time_constraint = randrange(start_time, stop_time) if random() < 0.1 else None
+        ub_time_constraint = randrange(start_time, stop_time) if random() < 0.1 else None
 
         observations.add_obs(band, resource, obs_time, lb_time_constraint, ub_time_constraint)
 
