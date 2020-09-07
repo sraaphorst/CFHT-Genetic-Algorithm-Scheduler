@@ -26,6 +26,7 @@ class Chromosome:
         :param stop_time: the stop time for the chromosome, derived from the GA
         """
         assert(resource != Resource.Both, "A chromosome is specific to a site.")
+        assert(stop_time > start_time, "Cannot have non-positive length.")
         self.observations = observations
         self.resource = resource
         self.start_time = start_time
@@ -57,9 +58,8 @@ class Chromosome:
         obs_time = obs.obs_time
 
         gap_start_times = []
-        #print(f"Schedule: {self.schedule}")
         sorted_start_times = sorted(self.schedule)
-        #print(f"Sorted start times: {sorted_start_times}")
+
         # Can we schedule at the start of the observation?
         # We can if one of the cases hold:
         # 1. There are no observations scheduled and this fits, i.e.:
@@ -133,11 +133,7 @@ class Chromosome:
         :return: True if we could schedule, and False otherwise
         """
 
-        #print(f"\nTrying to schedule observation {obs_idx}:")
-        #print_observation(self.observations[obs_idx])
-        #print(f"into chromosome {Resource(self.resource).name} {self.schedule}")
         # Check site compatibility.
-        #print(f"Fetching {obs_idx}...")
         obs = self.observations[obs_idx]
         if obs.resource != Resource.Both and obs.resource != self.resource:
             return False
@@ -147,7 +143,6 @@ class Chromosome:
         if obs_idx in observations:
             return False
 
-        #print("Calculating gaps...")
         # Get the gap start times in this chromosome in which we can schedule the observation.
         gap_start_times = self._get_gaps_in_range(obs_idx)
         if len(gap_start_times) == 0:
@@ -156,7 +151,6 @@ class Chromosome:
         # Schedule the observation in the first gap and sort the gaps.
         self.schedule.append((gap_start_times[0], obs_idx))
         self.schedule = sorted(self.schedule)
-        #print(f"New schedule: {self.schedule}")
         return True
 
     def remove(self, gene_idx):
@@ -183,6 +177,39 @@ class Chromosome:
 
     def __str__(self) -> str:
         return f"{Resource(self.resource).name} {self.schedule}: {self.determine_fitness()}"
+
+    def detailed_string(self, name: str = None) -> str:
+        """
+        Create a detailed string providing information about the schedule represented by this chromosome, including
+        percent use, gaps, observations, starting times, etc.
+        :return: The string representing the chromosome data in detail.
+        """
+        line_start = '\n\t' if name is not None else '\n'
+        data = name if name is not None else ''
+        usage = 0
+
+        obs_prev_time = 0
+        for obs_start_time, obs_idx in self.schedule:
+            if obs_prev_time != obs_start_time:
+                data += line_start + f'Gap of  {int(obs_start_time - obs_prev_time):>3} mins'
+            obs = self.observations[obs_idx]
+            ub = obs.ub_time_constraint
+            lb = obs.lb_time_constraint
+            data += line_start + f'At time {int(obs_start_time):>3}: Observation {obs.obs_idx:>4}, ' \
+                                 f'band={int(obs.band)}, ' \
+                                 f'resource={Resource(obs.resource).name:<4}, ' \
+                                 f'obs_time={int(obs.obs_time):>3}, ' \
+                                 f'lb={f"{int(lb):>4}" if (lb is not None) else "None"}, ' \
+                                 f'ub={f"{int(ub):>4}" if (ub is not None) else "None"}, ' \
+                                 f'priority={obs.priority:>4}'
+            usage += obs.obs_time
+            obs_prev_time = obs_start_time + obs.obs_time
+
+        if obs_prev_time != self.stop_time:
+            data += line_start + f'Gap of  {int(self.stop_time - obs_prev_time):>3} mins'
+        data += line_start + f"Usage:  {int(usage):>3} mins, {(usage / (self.stop_time - self.start_time) * 100):>5}%"
+
+        return data
 
 
 class GeneticAlgorithm:
@@ -225,7 +252,6 @@ class GeneticAlgorithm:
         at both is scheduled at GS.
         """
         for obs_idx in range(len(self.observations)):
-            #print(f"SCHEDULING {obs_idx}")
             # We can only schedule the observation in a chromosome corresponding to its site.
             # Chromosome.insert handles this, so we don't have to worry about it here.
             scheduled = False
@@ -250,11 +276,6 @@ class GeneticAlgorithm:
             else:
                 self.unused_genes.append(obs_idx)
             self._sort_chromosomes()
-
-            #print("Current chromosomes:")
-            #for c in self.chromosomes:
-            #    print(f"{Resource(c.resource).name} {c.schedule}")
-            #print("DONE.")
 
     def _sort_chromosomes(self):
         """
@@ -473,9 +494,6 @@ class GeneticAlgorithm:
             if new_best:
                 self._print_best_fitness(best_c_gn, best_c_gs, i)
 
-        print("\n\nFINAL BEST FITNESSES:")
-        self._print_best_fitness(best_c_gn, best_c_gs)
-
         return best_c_gn, best_c_gs
 
 
@@ -483,4 +501,7 @@ if __name__ == '__main__':
     seed(0)
     o = generate_random_observations(1000)
     ga = GeneticAlgorithm(o)
-    ga.run()
+    c_gn, c_gs = ga.run(1500)
+    print('\n\n*** RESULTS ***')
+    print(c_gn.detailed_string("Gemini North:"))
+    print(c_gs.detailed_string("Gemini South:"))

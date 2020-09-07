@@ -37,6 +37,10 @@ class Observation:
     allocated_time: float
     priority: float
 
+    def __str__(self):
+        return f'Observation {self.obs_idx}, band={int(self.band)}, resource={Resource(self.resource).name}, ' \
+        f'obs_time={self.obs_time}, ub={self.ub_time_constraint} lb={self.lb_time_constraint}, priority={self.priority}'
+
 
 class Observations:
     """
@@ -224,8 +228,15 @@ def generate_random_observations(num: int,
 
         obs_time = randrange(30, 120)
 
-        lb_time_constraint = randrange(start_time, stop_time) if random() < 0.1 else None
-        ub_time_constraint = randrange(start_time, stop_time) if random() < 0.1 else None
+        lb_time_constraint = None
+        ub_time_constraint = None
+        while True:
+            lb_time_constraint = randrange(start_time, stop_time) if random() < 0.2 else None
+            ub_time_constraint = randrange(start_time, stop_time) if random() < 0.2 else None
+            if lb_time_constraint is None or ub_time_constraint is None:
+                break
+            if lb_time_constraint < ub_time_constraint:
+                break
 
         observations.add_obs(band, resource, obs_time, lb_time_constraint, ub_time_constraint)
 
