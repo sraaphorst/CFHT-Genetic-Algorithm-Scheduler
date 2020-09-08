@@ -1,15 +1,13 @@
 # observations.py
 # By Sebastian Raaphorst, 2020. (Metric scoring by Bryan Miller, 2020.)
 
+from defaults import *
+
 from enum import IntEnum
 from dataclasses import dataclass
 from random import randrange, random
 
 import numpy as np
-
-# Start and stop time of a "day," in minutes.
-DEFAULT_START_TIME = 0
-DEFAULT_STOP_TIME = 600
 
 
 class Resource(IntEnum):
@@ -226,7 +224,7 @@ def generate_random_observations(num: int,
         band = str(randrange(1, 4))
         resource = Resource(randrange(3))
 
-        obs_time = randrange(30, 120)
+        obs_time = randrange(DEFAULT_OBS_TIME_LOWER, DEFAULT_OBS_TIME_UPPER)
 
         lb_time_constraint = None
         ub_time_constraint = None

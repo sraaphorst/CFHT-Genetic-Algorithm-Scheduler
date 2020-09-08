@@ -1,10 +1,12 @@
 # solver.py
 # By Sebastian Raaphorst, 2020.
 
-from typing import List, Tuple
-from random import seed, sample
-from math import ceil
 from observations import *
+
+from math import ceil
+from random import seed, sample
+import time
+from typing import List, Tuple
 
 # A gene is an observation number, and a chromosome is a list of genes where order is important.
 gene = int
@@ -191,7 +193,8 @@ class Chromosome:
         obs_prev_time = 0
         for obs_start_time, obs_idx in self.schedule:
             if obs_prev_time != obs_start_time:
-                data += line_start + f'Gap of  {int(obs_start_time - obs_prev_time):>3} mins'
+                gap_size = int(obs_start_time - obs_prev_time)
+                data += line_start + f'Gap of  {gap_size:>3} min{"s" if gap_size > 1 else ""}'
             obs = self.observations[obs_idx]
             ub = obs.ub_time_constraint
             lb = obs.lb_time_constraint
@@ -206,7 +209,9 @@ class Chromosome:
             obs_prev_time = obs_start_time + obs.obs_time
 
         if obs_prev_time != self.stop_time:
-            data += line_start + f'Gap of  {int(self.stop_time - obs_prev_time):>3} mins'
+            gap_size = int(self.stop_time - obs_prev_time)
+            data += line_start + f'Gap of  {gap_size:>3} min{"s" if gap_size > 1 else ""}'
+
         data += line_start + f"Usage:  {int(usage):>3} mins, "\
                              f"{(usage / (self.stop_time - self.start_time) * 100):>5}%, " \
                              f"Fitness: {self.determine_fitness()}"
@@ -501,9 +506,14 @@ class GeneticAlgorithm:
 
 if __name__ == '__main__':
     seed(0)
-    o = generate_random_observations(1000)
+    o = generate_random_observations(DEFAULT_NUM_OBSERVATIONS)
+
+    # Run the genetic algorithm.
+    start_time = time.monotonic()
     ga = GeneticAlgorithm(o)
-    c_gn, c_gs = ga.run(1500)
+    c_gn, c_gs = ga.run(DEFAULT_NUM_ITERATIONS)
+    end_time = time.monotonic()
     print('\n\n*** RESULTS ***')
     print(c_gn.detailed_string("Gemini North:"))
     print(c_gs.detailed_string("Gemini South:"))
+    print(f"Time: {end_time - start_time} s")
