@@ -207,7 +207,9 @@ class Chromosome:
 
         if obs_prev_time != self.stop_time:
             data += line_start + f'Gap of  {int(self.stop_time - obs_prev_time):>3} mins'
-        data += line_start + f"Usage:  {int(usage):>3} mins, {(usage / (self.stop_time - self.start_time) * 100):>5}%"
+        data += line_start + f"Usage:  {int(usage):>3} mins, "\
+                             f"{(usage / (self.stop_time - self.start_time) * 100):>5}%, " \
+                             f"Fitness: {self.determine_fitness()}"
 
         return data
 
