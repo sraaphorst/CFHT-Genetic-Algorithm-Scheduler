@@ -258,7 +258,15 @@ class GeneticAlgorithm:
         GS is given slight priority over GN in such that a new chromosome where the observation can be scheduled
         at both is scheduled at GS.
         """
-        for obs_idx in range(len(self.observations)):
+
+        # First sort the observations. This is difficult to do since they are stored as numpy arrays, so we will use
+        # a map of stored observation indices sorted by priority. This should move the band 1 programs to the head of
+        # the list of observations that we use when building chromosomes.
+        enumerated_observations = list(enumerate(self.observations))
+        sorted_obs_idx = [obs.obs_idx for _, obs in sorted(enumerated_observations,
+                                                           key=lambda x:x[1].priority, reverse=True)]
+
+        for obs_idx in sorted_obs_idx:
             # We can only schedule the observation in a chromosome corresponding to its site.
             # Chromosome.insert handles this, so we don't have to worry about it here.
             scheduled = False
