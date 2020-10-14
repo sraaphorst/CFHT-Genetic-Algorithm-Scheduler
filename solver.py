@@ -4,9 +4,11 @@
 from observations import *
 
 from math import ceil
-from random import seed, sample
+from random import seed, sample, randrange
 import time
 from typing import List, Tuple
+
+from astropy.table import Table
 
 # A gene is an observation number, and a chromosome is a list of genes where order is important.
 gene = int
@@ -17,6 +19,7 @@ class Chromosome:
     """
     A chromosome for the genetic algorithm, which represents a schedule for a given site.
     """
+
     def __init__(self, observations: Observations, resource: Resource,
                  start_time: int = DEFAULT_START_TIME, stop_time: int = DEFAULT_STOP_TIME):
         """
@@ -27,8 +30,8 @@ class Chromosome:
         :param start_time: the start time for the chromosome, derived from the GA
         :param stop_time: the stop time for the chromosome, derived from the GA
         """
-        assert(resource != Resource.Both, "A chromosome is specific to a site.")
-        assert(stop_time > start_time, "Cannot have non-positive length.")
+        assert (resource != Resource.Both, "A chromosome is specific to a site.")
+        assert (stop_time > start_time, "Cannot have non-positive length.")
         self.observations = observations
         self.resource = resource
         self.start_time = start_time
@@ -95,7 +98,8 @@ class Chromosome:
             #    comprises one big gap; or
             # 2. There are more observations scheduled, in which case, the end of this interval is the start time
             #    of the next scheduled observation.
-            next_end_time = self.stop_time if gene_idx == len(self.schedule) - 1 else sorted_start_times[gene_idx + 1][0]
+            next_end_time = self.stop_time if gene_idx == len(self.schedule) - 1 else sorted_start_times[gene_idx + 1][
+                0]
 
             # If next_end_time - obs_time < lower_time, this would violate timing constraints, scheduling this
             # observation earlier than it is permitted.
@@ -118,10 +122,36 @@ class Chromosome:
 
     def determine_fitness(self) -> float:
         """
-        Determine the value of the chromosome, which is just the sum of the metric over its observations.
+        Determine the value of the chromosome, which is just the sum of the metric over its observations multiplied by
+        the score for the times chosen.
         :return: the sum of the metric over the observations
         """
-        return sum(self.observations[idx].priority for _, idx in self.schedule)
+        # TODO: How do we take time priorities into account here in calculating fitness?
+        # TODO: This is especially important when doing the initial population and nothing is scheduled, so
+        # TODO: indexed is not defined.
+        indexed = {idx: val for val, idx in enumerate(self.schedule)}
+        # print(self.schedule)
+
+        score = 0
+        for time, idx in self.schedule:
+            obs = self.observations[idx]
+            # print(f"Observation {obs.name} # {idx} scheduled at time {time}")
+            priority = obs.priority
+            length = obs.obs_time
+            # print(time, obs.lb_time_constraint, time - obs.lb_time_constraint)
+            # print(obs.time_priorities)
+            time_score = obs.time_priorities[int(time - obs.lb_time_constraint)]
+            score += priority * length * time_score
+        return score / (DEFAULT_STOP_TIME - DEFAULT_START_TIME)
+
+        # return sum(self.observations[idx].priority * self.observations[idx].obs_time for _, idx in self.schedule) / \
+        #        (DEFAULT_STOP_TIME - DEFAULT_START_TIME)
+        # return sum(self.observations[idx].priority * self.observations[idx].obs_time * self.observations[idx].time_priorities[indexed[idx]] for _, idx in self.schedule) /\
+        #        (DEFAULT_STOP_TIME - DEFAULT_START_TIME)
+        # return sum(self.observations[idx].priority for _, idx in self.schedule)
+
+    # def determine_score(self) -> float:
+    #     return sum(self.observations[idx].priority for _, idx in self.schedule)
 
     def insert(self, obs_idx) -> bool:
         """
@@ -198,12 +228,9 @@ class Chromosome:
             obs = self.observations[obs_idx]
             ub = obs.ub_time_constraint
             lb = obs.lb_time_constraint
-            data += line_start + f'At time {int(obs_start_time):>3}: Observation {obs.obs_idx:>4}, ' \
-                                 f'band={int(obs.band)}, ' \
+            data += line_start + f'At time {int(obs_start_time):>3}: Observation {obs.name}, ' \
                                  f'resource={Resource(obs.resource).name:<4}, ' \
                                  f'obs_time={int(obs.obs_time):>3}, ' \
-                                 f'lb={f"{int(lb):>4}" if (lb is not None) else "None"}, ' \
-                                 f'ub={f"{int(ub):>4}" if (ub is not None) else "None"}, ' \
                                  f'priority={obs.priority:>4}'
             usage += obs.obs_time
             obs_prev_time = obs_start_time + obs.obs_time
@@ -212,7 +239,7 @@ class Chromosome:
             gap_size = int(self.stop_time - obs_prev_time)
             data += line_start + f'Gap of  {gap_size:>3} min{"s" if gap_size > 1 else ""}'
 
-        data += line_start + f"Usage:  {int(usage):>3} mins, "\
+        data += line_start + f"Usage:  {int(usage):>3} mins, " \
                              f"{(usage / (self.stop_time - self.start_time) * 100):>5}%, " \
                              f"Fitness: {self.determine_fitness()}"
 
@@ -243,8 +270,8 @@ class GeneticAlgorithm:
         :param start_time: the start time, as a float (arbitrary)
         :param stop_time: the end time, as a float (arbitrary)
         """
-        assert(len(observations) > 1, "Must have observations to schedule.")
-        assert(start_time < stop_time, "The scheduling period must have some length.")
+        assert (len(observations) > 1, "Must have observations to schedule.")
+        assert (start_time < stop_time, "The scheduling period must have some length.")
 
         self.observations = observations
         self.start_time = start_time
@@ -264,7 +291,8 @@ class GeneticAlgorithm:
         # the list of observations that we use when building chromosomes.
         enumerated_observations = list(enumerate(self.observations))
         sorted_obs_idx = [obs.obs_idx for _, obs in sorted(enumerated_observations,
-                                                           key=lambda x:x[1].priority, reverse=True)]
+                                                           key=lambda x: x[1].priority * x[1].obs_time *
+                                                                         np.max(x[1].time_priorities), reverse=True)]
 
         for obs_idx in sorted_obs_idx:
             # We can only schedule the observation in a chromosome corresponding to its site.
@@ -513,15 +541,70 @@ class GeneticAlgorithm:
 
 
 if __name__ == '__main__':
-    seed(0)
-    o = generate_random_observations(DEFAULT_NUM_OBSERVATIONS)
+    granularity = 3
+
+    obstab = Table.read('obstab.fits')
+    targtab_metvis = Table.read('targtab_metvis.fits')
+    targtab_metvisha = Table.read('targtab_metvisha.fits')
+
+    # Get the obs_id of the observations we are considering.
+    all_obs_ids = [row['obs_id'] for row in obstab]
+
+    # Get the fixed priorities for the observations. These are 0 or a fixed constant.
+    # If they are 0, do not include them and filter them out.
+    # If they are a fixed constant, include them.
+    fixed_priority_list = {obs_id: list(enumerate(row['weight'])) for obs_id in all_obs_ids for row in targtab_metvis if
+                           row['id'] == obs_id if max(row['weight'] > 0)}
+
+    # List of observation IDs that are active.
+    obs_ids = []
+
+    # fixed_properties[obs_id] = fixed property
+    fixed_priorities = {}
+
+    interpolated_timeslot_priorities = {}
+
+    obs_lengths = {row['obs_id']: (row['tot_time'] - row['obs_time']) * 60 for row in obstab}
+    observations = Observations()
+    obs_idx = 0
+    for obs_id in all_obs_ids:
+        # Get the list of fixed priorities for obs_id. This gives us the fixed priority and the time periods for which
+        # this observation is schedulable.
+        fixed_priority_lists = [list(enumerate(row['weight'])) for row in targtab_metvis if row['id'] == obs_id if
+                                max(row['weight']) > 0]
+        if len(fixed_priority_lists) == 0:
+            continue
+        fixed_priority_list = fixed_priority_lists[0]
+        if len(fixed_priority_list) == 0:
+            continue
+
+        obs_ids.append(obs_id)
+
+        # Get the indices of the earliest nonzero and the last nonzero entries.
+        filtered_priority_list = [(idx, val) for (idx, val) in fixed_priority_list if val > 0]
+        minval, maxval = filtered_priority_list[0][0], filtered_priority_list[-1][0]
+
+        fixed_priorities[obs_id] = filtered_priority_list[0][1]
+
+        # Now we process the actual timeslots. Get the metric score for each timeslot for this observation.
+        timeslot_priorities = [row['weight'] for row in targtab_metvisha if row['id'] == obs_id][0][minval:maxval + 1]
+        interpolated_timeslot_priorities[obs_id] = np.interp(range(3 * minval, 3 * maxval + 1),
+                                                             range(3 * minval, 3 * maxval + 1, 3), timeslot_priorities)
+
+        observations.add_obs(obs_id, Resource.GS, obs_lengths[obs_id], 3 * minval, 3 * maxval + 1 - obs_lengths[obs_id],
+                             fixed_priorities[obs_id], interpolated_timeslot_priorities[obs_id])
+
+    seed(time.time())
 
     # Run the genetic algorithm.
+    print(f"*** RUNNING ALGORITHM for {observations.num_obs} observations ***")
     start_time = time.monotonic()
-    ga = GeneticAlgorithm(o)
+    ga = GeneticAlgorithm(observations)
     c_gn, c_gs = ga.run(DEFAULT_NUM_ITERATIONS)
     end_time = time.monotonic()
     print('\n\n*** RESULTS ***')
-    print(c_gn.detailed_string("Gemini North:"))
-    print(c_gs.detailed_string("Gemini South:"))
+    if c_gn is not None:
+        print(c_gn.detailed_string("Gemini North:"))
+    if c_gs is not None:
+        print(c_gs.detailed_string("Gemini South:"))
     print(f"Time: {end_time - start_time} s")

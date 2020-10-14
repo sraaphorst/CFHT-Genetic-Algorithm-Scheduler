@@ -1,0 +1,588 @@
+Observation 0: band=2 resource=GS obs_time=45.0 lb=None ub=None prio=15.8
+Observation 1: band=2 resource=GS obs_time=52.0 lb=None ub=None prio=15.8
+Observation 2: band=1 resource=Both obs_time=47.0 lb=None ub=None prio=36.6
+Observation 3: band=3 resource=GS obs_time=59.0 lb=None ub=None prio=5.4
+Observation 4: band=3 resource=GN obs_time=49.0 lb=75 ub=None prio=5.4
+Observation 5: band=3 resource=GS obs_time=52.0 lb=None ub=None prio=5.4
+Observation 6: band=2 resource=Both obs_time=55.0 lb=None ub=None prio=15.8
+Observation 7: band=2 resource=GS obs_time=58.0 lb=None ub=561 prio=15.8
+Observation 8: band=1 resource=GN obs_time=56.0 lb=None ub=None prio=36.6
+Observation 9: band=3 resource=Both obs_time=45.0 lb=None ub=None prio=5.4
+Observation 10: band=2 resource=GN obs_time=56.0 lb=None ub=None prio=15.8
+Observation 11: band=1 resource=Both obs_time=48.0 lb=None ub=None prio=36.6
+Observation 12: band=3 resource=GS obs_time=46.0 lb=327 ub=None prio=5.4
+Observation 13: band=2 resource=GN obs_time=49.0 lb=None ub=None prio=15.8
+Observation 14: band=3 resource=GS obs_time=58.0 lb=None ub=None prio=5.4
+Observation 15: band=3 resource=Both obs_time=54.0 lb=None ub=394 prio=5.4
+Observation 16: band=2 resource=Both obs_time=48.0 lb=None ub=191 prio=15.8
+Observation 17: band=1 resource=Both obs_time=55.0 lb=None ub=133 prio=36.6
+Observation 18: band=1 resource=GN obs_time=58.0 lb=553 ub=None prio=36.6
+Observation 19: band=3 resource=Both obs_time=49.0 lb=None ub=None prio=5.4
+Observation 20: band=1 resource=Both obs_time=54.0 lb=None ub=None prio=36.6
+Observation 21: band=2 resource=GS obs_time=52.0 lb=None ub=None prio=15.8
+Observation 22: band=2 resource=GN obs_time=50.0 lb=None ub=None prio=15.8
+Observation 23: band=3 resource=GS obs_time=58.0 lb=16 ub=None prio=5.4
+Observation 24: band=1 resource=Both obs_time=48.0 lb=None ub=436 prio=36.6
+Observation 25: band=1 resource=GN obs_time=57.0 lb=224 ub=587 prio=36.6
+Observation 26: band=3 resource=Both obs_time=54.0 lb=None ub=193 prio=5.4
+Observation 27: band=3 resource=Both obs_time=46.0 lb=None ub=None prio=5.4
+Observation 28: band=1 resource=GN obs_time=54.0 lb=189 ub=None prio=36.6
+Observation 29: band=2 resource=GN obs_time=56.0 lb=None ub=None prio=15.8
+Observation 30: band=1 resource=Both obs_time=51.0 lb=None ub=None prio=36.6
+Observation 31: band=1 resource=GN obs_time=46.0 lb=None ub=None prio=36.6
+Observation 32: band=1 resource=GN obs_time=53.0 lb=None ub=None prio=36.6
+Observation 33: band=3 resource=GS obs_time=48.0 lb=None ub=None prio=5.4
+Observation 34: band=2 resource=Both obs_time=47.0 lb=None ub=None prio=15.8
+Observation 35: band=1 resource=Both obs_time=47.0 lb=None ub=None prio=36.6
+Observation 36: band=2 resource=GN obs_time=54.0 lb=None ub=None prio=15.8
+Observation 37: band=1 resource=GS obs_time=55.0 lb=None ub=None prio=36.6
+Observation 38: band=3 resource=GS obs_time=55.0 lb=None ub=None prio=5.4
+Observation 39: band=2 resource=GN obs_time=53.0 lb=None ub=None prio=15.8
+Observation 40: band=1 resource=GS obs_time=56.0 lb=287 ub=493 prio=36.6
+Observation 41: band=2 resource=Both obs_time=49.0 lb=None ub=None prio=15.8
+Observation 42: band=3 resource=Both obs_time=47.0 lb=None ub=None prio=5.4
+Observation 43: band=2 resource=Both obs_time=46.0 lb=196 ub=None prio=15.8
+Observation 44: band=1 resource=GN obs_time=48.0 lb=None ub=None prio=36.6
+Observation 45: band=3 resource=Both obs_time=58.0 lb=None ub=None prio=5.4
+Observation 46: band=3 resource=Both obs_time=51.0 lb=None ub=None prio=5.4
+Observation 47: band=1 resource=GS obs_time=46.0 lb=None ub=540 prio=36.6
+Observation 48: band=2 resource=Both obs_time=54.0 lb=None ub=None prio=15.8
+Observation 49: band=2 resource=GS obs_time=49.0 lb=None ub=425 prio=15.8
+Observation 50: band=1 resource=Both obs_time=55.0 lb=None ub=None prio=36.6
+Observation 51: band=1 resource=GN obs_time=51.0 lb=None ub=None prio=36.6
+Observation 52: band=1 resource=GN obs_time=45.0 lb=None ub=541 prio=36.6
+Observation 53: band=3 resource=GN obs_time=48.0 lb=203 ub=None prio=5.4
+Observation 54: band=2 resource=Both obs_time=47.0 lb=406 ub=None prio=15.8
+Observation 55: band=1 resource=GS obs_time=59.0 lb=None ub=None prio=36.6
+Observation 56: band=2 resource=GN obs_time=55.0 lb=None ub=None prio=15.8
+Observation 57: band=2 resource=GN obs_time=58.0 lb=19 ub=210 prio=15.8
+Observation 58: band=3 resource=GS obs_time=53.0 lb=None ub=None prio=5.4
+Observation 59: band=3 resource=GN obs_time=58.0 lb=None ub=None prio=5.4
+Observation 60: band=3 resource=GS obs_time=56.0 lb=None ub=None prio=5.4
+Observation 61: band=2 resource=GS obs_time=58.0 lb=None ub=None prio=15.8
+Observation 62: band=3 resource=GS obs_time=45.0 lb=277 ub=None prio=5.4
+Observation 63: band=2 resource=Both obs_time=46.0 lb=None ub=None prio=15.8
+Observation 64: band=1 resource=GS obs_time=47.0 lb=597 ub=None prio=36.6
+Observation 65: band=2 resource=Both obs_time=47.0 lb=None ub=None prio=15.8
+Observation 66: band=1 resource=GN obs_time=49.0 lb=535 ub=None prio=36.6
+Observation 67: band=2 resource=GS obs_time=58.0 lb=None ub=None prio=15.8
+Observation 68: band=1 resource=Both obs_time=59.0 lb=None ub=None prio=36.6
+Observation 69: band=2 resource=GN obs_time=52.0 lb=509 ub=None prio=15.8
+Observation 70: band=2 resource=GS obs_time=56.0 lb=None ub=170 prio=15.8
+Observation 71: band=3 resource=Both obs_time=51.0 lb=None ub=None prio=5.4
+Observation 72: band=1 resource=GN obs_time=57.0 lb=569 ub=None prio=36.6
+Observation 73: band=2 resource=GS obs_time=57.0 lb=None ub=None prio=15.8
+Observation 74: band=2 resource=GN obs_time=50.0 lb=None ub=None prio=15.8
+Observation 75: band=3 resource=GN obs_time=51.0 lb=None ub=None prio=5.4
+Observation 76: band=3 resource=GN obs_time=46.0 lb=None ub=None prio=5.4
+Observation 77: band=3 resource=GN obs_time=57.0 lb=None ub=202 prio=5.4
+Observation 78: band=2 resource=GS obs_time=50.0 lb=None ub=499 prio=15.8
+Observation 79: band=1 resource=Both obs_time=51.0 lb=None ub=None prio=36.6
+Observation 80: band=3 resource=GS obs_time=55.0 lb=None ub=None prio=5.4
+Observation 81: band=2 resource=GS obs_time=55.0 lb=None ub=None prio=15.8
+Observation 82: band=3 resource=GN obs_time=45.0 lb=None ub=None prio=5.4
+Observation 83: band=2 resource=GS obs_time=45.0 lb=None ub=None prio=15.8
+Observation 84: band=3 resource=GN obs_time=58.0 lb=None ub=None prio=5.4
+Observation 85: band=3 resource=GS obs_time=46.0 lb=None ub=None prio=5.4
+Observation 86: band=1 resource=GN obs_time=48.0 lb=307 ub=459 prio=36.6
+Observation 87: band=2 resource=GN obs_time=57.0 lb=471 ub=None prio=15.8
+Observation 88: band=3 resource=GS obs_time=59.0 lb=None ub=92 prio=5.4
+Observation 89: band=3 resource=Both obs_time=57.0 lb=None ub=436 prio=5.4
+Observation 90: band=1 resource=GS obs_time=53.0 lb=None ub=None prio=36.6
+Observation 91: band=2 resource=GS obs_time=54.0 lb=None ub=None prio=15.8
+Observation 92: band=1 resource=Both obs_time=59.0 lb=186 ub=None prio=36.6
+Observation 93: band=3 resource=GS obs_time=50.0 lb=268 ub=None prio=5.4
+Observation 94: band=2 resource=GS obs_time=51.0 lb=None ub=130 prio=15.8
+Observation 95: band=1 resource=GS obs_time=56.0 lb=None ub=36 prio=36.6
+Observation 96: band=2 resource=GS obs_time=47.0 lb=None ub=None prio=15.8
+Observation 97: band=3 resource=GN obs_time=55.0 lb=None ub=None prio=5.4
+Observation 98: band=2 resource=GS obs_time=45.0 lb=None ub=None prio=15.8
+Observation 99: band=1 resource=GN obs_time=52.0 lb=None ub=135 prio=36.6
+Observation 100: band=3 resource=GS obs_time=46.0 lb=None ub=None prio=5.4
+Observation 101: band=1 resource=GS obs_time=57.0 lb=None ub=None prio=36.6
+Observation 102: band=1 resource=Both obs_time=56.0 lb=None ub=None prio=36.6
+Observation 103: band=2 resource=Both obs_time=46.0 lb=None ub=None prio=15.8
+Observation 104: band=2 resource=GN obs_time=59.0 lb=None ub=None prio=15.8
+Observation 105: band=3 resource=Both obs_time=57.0 lb=193 ub=401 prio=5.4
+Observation 106: band=2 resource=GS obs_time=57.0 lb=365 ub=None prio=15.8
+Observation 107: band=1 resource=GN obs_time=59.0 lb=None ub=None prio=36.6
+Observation 108: band=1 resource=Both obs_time=55.0 lb=None ub=None prio=36.6
+Observation 109: band=1 resource=GN obs_time=57.0 lb=None ub=None prio=36.6
+Observation 110: band=3 resource=Both obs_time=53.0 lb=None ub=None prio=5.4
+Observation 111: band=1 resource=GN obs_time=51.0 lb=None ub=None prio=36.6
+Observation 112: band=1 resource=GN obs_time=51.0 lb=425 ub=None prio=36.6
+Observation 113: band=3 resource=GN obs_time=57.0 lb=None ub=None prio=5.4
+Observation 114: band=1 resource=GS obs_time=59.0 lb=None ub=None prio=36.6
+Observation 115: band=2 resource=GN obs_time=50.0 lb=367 ub=None prio=15.8
+Observation 116: band=2 resource=GS obs_time=47.0 lb=236 ub=None prio=15.8
+Observation 117: band=1 resource=Both obs_time=59.0 lb=3 ub=None prio=36.6
+Observation 118: band=3 resource=Both obs_time=59.0 lb=7 ub=None prio=5.4
+Observation 119: band=3 resource=GN obs_time=59.0 lb=None ub=None prio=5.4
+Observation 120: band=1 resource=GS obs_time=46.0 lb=None ub=None prio=36.6
+Observation 121: band=2 resource=GN obs_time=45.0 lb=None ub=None prio=15.8
+Observation 122: band=2 resource=GS obs_time=49.0 lb=None ub=None prio=15.8
+Observation 123: band=3 resource=GS obs_time=47.0 lb=None ub=546 prio=5.4
+Observation 124: band=3 resource=GS obs_time=47.0 lb=None ub=128 prio=5.4
+Observation 125: band=1 resource=GS obs_time=53.0 lb=None ub=None prio=36.6
+Observation 126: band=2 resource=GS obs_time=51.0 lb=None ub=None prio=15.8
+Observation 127: band=3 resource=GN obs_time=51.0 lb=74 ub=306 prio=5.4
+Observation 128: band=3 resource=GS obs_time=56.0 lb=None ub=None prio=5.4
+Observation 129: band=2 resource=Both obs_time=50.0 lb=455 ub=None prio=15.8
+Observation 130: band=3 resource=Both obs_time=45.0 lb=None ub=328 prio=5.4
+Observation 131: band=2 resource=GN obs_time=50.0 lb=None ub=None prio=15.8
+Observation 132: band=1 resource=GN obs_time=49.0 lb=157 ub=None prio=36.6
+Observation 133: band=2 resource=GS obs_time=47.0 lb=None ub=None prio=15.8
+Observation 134: band=1 resource=GS obs_time=50.0 lb=None ub=473 prio=36.6
+Observation 135: band=3 resource=Both obs_time=46.0 lb=None ub=None prio=5.4
+Observation 136: band=1 resource=Both obs_time=52.0 lb=None ub=305 prio=36.6
+Observation 137: band=1 resource=Both obs_time=49.0 lb=None ub=482 prio=36.6
+Observation 138: band=1 resource=Both obs_time=52.0 lb=None ub=None prio=36.6
+Observation 139: band=2 resource=GS obs_time=55.0 lb=None ub=41 prio=15.8
+Observation 140: band=1 resource=GS obs_time=51.0 lb=None ub=None prio=36.6
+Observation 141: band=2 resource=GS obs_time=46.0 lb=None ub=None prio=15.8
+Observation 142: band=3 resource=GN obs_time=54.0 lb=72 ub=None prio=5.4
+Observation 143: band=2 resource=Both obs_time=50.0 lb=255 ub=None prio=15.8
+Observation 144: band=1 resource=GN obs_time=51.0 lb=None ub=None prio=36.6
+Observation 145: band=1 resource=Both obs_time=53.0 lb=None ub=None prio=36.6
+Observation 146: band=2 resource=Both obs_time=53.0 lb=None ub=None prio=15.8
+Observation 147: band=2 resource=GS obs_time=52.0 lb=None ub=None prio=15.8
+Observation 148: band=1 resource=GN obs_time=56.0 lb=410 ub=None prio=36.6
+Observation 149: band=1 resource=Both obs_time=55.0 lb=None ub=None prio=36.6
+Observation 150: band=3 resource=GS obs_time=48.0 lb=None ub=None prio=5.4
+Observation 151: band=2 resource=GS obs_time=55.0 lb=None ub=None prio=15.8
+Observation 152: band=1 resource=Both obs_time=52.0 lb=220 ub=482 prio=36.6
+Observation 153: band=2 resource=GN obs_time=58.0 lb=None ub=83 prio=15.8
+Observation 154: band=3 resource=Both obs_time=59.0 lb=None ub=42 prio=5.4
+Observation 155: band=1 resource=Both obs_time=45.0 lb=None ub=None prio=36.6
+Observation 156: band=3 resource=GS obs_time=56.0 lb=None ub=586 prio=5.4
+Observation 157: band=2 resource=GN obs_time=46.0 lb=None ub=None prio=15.8
+Observation 158: band=2 resource=GN obs_time=50.0 lb=None ub=None prio=15.8
+Observation 159: band=2 resource=GN obs_time=52.0 lb=None ub=323 prio=15.8
+Observation 160: band=1 resource=GN obs_time=59.0 lb=357 ub=None prio=36.6
+Observation 161: band=2 resource=GS obs_time=57.0 lb=None ub=None prio=15.8
+Observation 162: band=1 resource=GS obs_time=48.0 lb=None ub=397 prio=36.6
+Observation 163: band=1 resource=GN obs_time=55.0 lb=191 ub=None prio=36.6
+Observation 164: band=3 resource=Both obs_time=55.0 lb=304 ub=None prio=5.4
+Observation 165: band=3 resource=Both obs_time=57.0 lb=None ub=None prio=5.4
+Observation 166: band=2 resource=GS obs_time=52.0 lb=528 ub=None prio=15.8
+Observation 167: band=3 resource=Both obs_time=59.0 lb=None ub=None prio=5.4
+Observation 168: band=2 resource=GS obs_time=49.0 lb=None ub=None prio=15.8
+Observation 169: band=2 resource=GN obs_time=45.0 lb=438 ub=None prio=15.8
+Observation 170: band=3 resource=GS obs_time=53.0 lb=None ub=None prio=5.4
+Observation 171: band=2 resource=Both obs_time=46.0 lb=None ub=326 prio=15.8
+Observation 172: band=2 resource=Both obs_time=52.0 lb=None ub=None prio=15.8
+Observation 173: band=3 resource=GN obs_time=48.0 lb=None ub=None prio=5.4
+Observation 174: band=3 resource=GS obs_time=48.0 lb=None ub=None prio=5.4
+Observation 175: band=3 resource=Both obs_time=49.0 lb=None ub=None prio=5.4
+Observation 176: band=2 resource=GS obs_time=50.0 lb=None ub=None prio=15.8
+Observation 177: band=2 resource=Both obs_time=46.0 lb=507 ub=None prio=15.8
+Observation 178: band=1 resource=GS obs_time=52.0 lb=None ub=83 prio=36.6
+Observation 179: band=1 resource=GN obs_time=58.0 lb=None ub=None prio=36.6
+Observation 180: band=1 resource=GS obs_time=54.0 lb=437 ub=None prio=36.6
+Observation 181: band=2 resource=GN obs_time=47.0 lb=None ub=None prio=15.8
+Observation 182: band=2 resource=GS obs_time=50.0 lb=None ub=292 prio=15.8
+Observation 183: band=3 resource=Both obs_time=57.0 lb=None ub=None prio=5.4
+Observation 184: band=2 resource=Both obs_time=54.0 lb=None ub=None prio=15.8
+Observation 185: band=2 resource=GN obs_time=45.0 lb=101 ub=424 prio=15.8
+Observation 186: band=1 resource=GN obs_time=49.0 lb=None ub=None prio=36.6
+Observation 187: band=1 resource=Both obs_time=53.0 lb=None ub=None prio=36.6
+Observation 188: band=1 resource=GS obs_time=55.0 lb=None ub=None prio=36.6
+Observation 189: band=3 resource=GS obs_time=48.0 lb=None ub=None prio=5.4
+Observation 190: band=3 resource=GS obs_time=48.0 lb=None ub=None prio=5.4
+Observation 191: band=1 resource=Both obs_time=49.0 lb=None ub=None prio=36.6
+Observation 192: band=3 resource=GS obs_time=49.0 lb=None ub=15 prio=5.4
+Observation 193: band=3 resource=Both obs_time=50.0 lb=None ub=None prio=5.4
+Observation 194: band=1 resource=GS obs_time=47.0 lb=None ub=None prio=36.6
+Observation 195: band=1 resource=GN obs_time=57.0 lb=None ub=None prio=36.6
+Observation 196: band=2 resource=Both obs_time=57.0 lb=None ub=None prio=15.8
+Observation 197: band=3 resource=GN obs_time=58.0 lb=None ub=None prio=5.4
+Observation 198: band=3 resource=Both obs_time=47.0 lb=None ub=None prio=5.4
+Observation 199: band=1 resource=Both obs_time=58.0 lb=367 ub=None prio=36.6
+Observation 200: band=2 resource=GN obs_time=48.0 lb=None ub=506 prio=15.8
+Observation 201: band=3 resource=GS obs_time=53.0 lb=None ub=None prio=5.4
+Observation 202: band=2 resource=GN obs_time=54.0 lb=None ub=324 prio=15.8
+Observation 203: band=2 resource=GS obs_time=45.0 lb=None ub=None prio=15.8
+Observation 204: band=3 resource=GN obs_time=50.0 lb=None ub=None prio=5.4
+Observation 205: band=3 resource=Both obs_time=48.0 lb=None ub=None prio=5.4
+Observation 206: band=2 resource=GN obs_time=50.0 lb=None ub=154 prio=15.8
+Observation 207: band=2 resource=GN obs_time=52.0 lb=None ub=46 prio=15.8
+Observation 208: band=1 resource=GN obs_time=55.0 lb=None ub=None prio=36.6
+Observation 209: band=2 resource=Both obs_time=51.0 lb=221 ub=None prio=15.8
+Observation 210: band=1 resource=GS obs_time=49.0 lb=336 ub=None prio=36.6
+Observation 211: band=3 resource=GS obs_time=51.0 lb=270 ub=None prio=5.4
+Observation 212: band=3 resource=Both obs_time=56.0 lb=None ub=125 prio=5.4
+Observation 213: band=2 resource=GS obs_time=47.0 lb=141 ub=None prio=15.8
+Observation 214: band=3 resource=Both obs_time=58.0 lb=None ub=337 prio=5.4
+Observation 215: band=1 resource=GN obs_time=48.0 lb=None ub=None prio=36.6
+Observation 216: band=1 resource=Both obs_time=57.0 lb=None ub=None prio=36.6
+Observation 217: band=3 resource=GN obs_time=51.0 lb=None ub=None prio=5.4
+Observation 218: band=3 resource=Both obs_time=52.0 lb=None ub=None prio=5.4
+Observation 219: band=1 resource=GS obs_time=50.0 lb=None ub=None prio=36.6
+Observation 220: band=1 resource=Both obs_time=59.0 lb=None ub=None prio=36.6
+Observation 221: band=2 resource=GS obs_time=55.0 lb=241 ub=None prio=15.8
+Observation 222: band=1 resource=Both obs_time=57.0 lb=None ub=None prio=36.6
+Observation 223: band=2 resource=GS obs_time=45.0 lb=None ub=None prio=15.8
+Observation 224: band=3 resource=GS obs_time=45.0 lb=None ub=None prio=5.4
+Observation 225: band=2 resource=Both obs_time=45.0 lb=None ub=None prio=15.8
+Observation 226: band=2 resource=GS obs_time=52.0 lb=279 ub=None prio=15.8
+Observation 227: band=1 resource=GS obs_time=55.0 lb=None ub=None prio=36.6
+Observation 228: band=2 resource=Both obs_time=57.0 lb=None ub=None prio=15.8
+Observation 229: band=2 resource=GS obs_time=58.0 lb=None ub=None prio=15.8
+Observation 230: band=3 resource=GS obs_time=57.0 lb=None ub=None prio=5.4
+Observation 231: band=3 resource=Both obs_time=56.0 lb=None ub=None prio=5.4
+Observation 232: band=1 resource=GN obs_time=50.0 lb=None ub=None prio=36.6
+Observation 233: band=3 resource=GN obs_time=54.0 lb=352 ub=None prio=5.4
+Observation 234: band=3 resource=GS obs_time=50.0 lb=None ub=None prio=5.4
+Observation 235: band=2 resource=GN obs_time=45.0 lb=None ub=None prio=15.8
+Observation 236: band=2 resource=GN obs_time=50.0 lb=None ub=None prio=15.8
+Observation 237: band=2 resource=Both obs_time=58.0 lb=None ub=None prio=15.8
+Observation 238: band=3 resource=GN obs_time=46.0 lb=None ub=None prio=5.4
+Observation 239: band=1 resource=Both obs_time=47.0 lb=161 ub=None prio=36.6
+Observation 240: band=3 resource=Both obs_time=57.0 lb=None ub=None prio=5.4
+Observation 241: band=2 resource=GS obs_time=49.0 lb=None ub=None prio=15.8
+Observation 242: band=3 resource=GS obs_time=49.0 lb=None ub=None prio=5.4
+Observation 243: band=2 resource=GN obs_time=56.0 lb=None ub=None prio=15.8
+Observation 244: band=1 resource=Both obs_time=47.0 lb=None ub=None prio=36.6
+Observation 245: band=3 resource=GS obs_time=50.0 lb=None ub=421 prio=5.4
+Observation 246: band=3 resource=Both obs_time=57.0 lb=None ub=None prio=5.4
+Observation 247: band=1 resource=GS obs_time=53.0 lb=None ub=199 prio=36.6
+Observation 248: band=3 resource=GS obs_time=55.0 lb=None ub=255 prio=5.4
+Observation 249: band=3 resource=GN obs_time=49.0 lb=430 ub=458 prio=5.4
+Observation 250: band=1 resource=Both obs_time=56.0 lb=None ub=None prio=36.6
+Observation 251: band=3 resource=GN obs_time=48.0 lb=66 ub=None prio=5.4
+Observation 252: band=3 resource=GS obs_time=49.0 lb=None ub=None prio=5.4
+Observation 253: band=2 resource=Both obs_time=50.0 lb=30 ub=None prio=15.8
+Observation 254: band=2 resource=GN obs_time=57.0 lb=None ub=None prio=15.8
+Observation 255: band=3 resource=Both obs_time=55.0 lb=None ub=None prio=5.4
+Observation 256: band=1 resource=Both obs_time=52.0 lb=None ub=None prio=36.6
+Observation 257: band=3 resource=Both obs_time=49.0 lb=None ub=485 prio=5.4
+Observation 258: band=3 resource=GN obs_time=45.0 lb=355 ub=None prio=5.4
+Observation 259: band=1 resource=GN obs_time=56.0 lb=553 ub=None prio=36.6
+Observation 260: band=2 resource=GN obs_time=50.0 lb=None ub=281 prio=15.8
+Observation 261: band=2 resource=Both obs_time=47.0 lb=None ub=None prio=15.8
+Observation 262: band=2 resource=Both obs_time=45.0 lb=137 ub=None prio=15.8
+Observation 263: band=3 resource=Both obs_time=56.0 lb=None ub=532 prio=5.4
+Observation 264: band=1 resource=Both obs_time=56.0 lb=None ub=None prio=36.6
+Observation 265: band=1 resource=GS obs_time=57.0 lb=None ub=573 prio=36.6
+Observation 266: band=1 resource=GS obs_time=48.0 lb=None ub=None prio=36.6
+Observation 267: band=3 resource=GS obs_time=57.0 lb=None ub=None prio=5.4
+Observation 268: band=1 resource=GS obs_time=53.0 lb=323 ub=None prio=36.6
+Observation 269: band=1 resource=GN obs_time=55.0 lb=None ub=None prio=36.6
+Observation 270: band=2 resource=Both obs_time=47.0 lb=None ub=None prio=15.8
+Observation 271: band=1 resource=GS obs_time=57.0 lb=None ub=None prio=36.6
+Observation 272: band=3 resource=GS obs_time=45.0 lb=None ub=437 prio=5.4
+Observation 273: band=3 resource=GS obs_time=54.0 lb=None ub=None prio=5.4
+Observation 274: band=3 resource=GS obs_time=58.0 lb=None ub=324 prio=5.4
+Observation 275: band=1 resource=GN obs_time=56.0 lb=345 ub=None prio=36.6
+Observation 276: band=1 resource=GN obs_time=51.0 lb=None ub=None prio=36.6
+Observation 277: band=2 resource=GN obs_time=54.0 lb=None ub=None prio=15.8
+Observation 278: band=2 resource=GN obs_time=51.0 lb=363 ub=None prio=15.8
+Observation 279: band=3 resource=GS obs_time=55.0 lb=None ub=None prio=5.4
+Observation 280: band=2 resource=GS obs_time=47.0 lb=270 ub=396 prio=15.8
+Observation 281: band=1 resource=GS obs_time=46.0 lb=359 ub=413 prio=36.6
+Observation 282: band=3 resource=Both obs_time=55.0 lb=None ub=None prio=5.4
+Observation 283: band=3 resource=Both obs_time=58.0 lb=None ub=None prio=5.4
+Observation 284: band=1 resource=Both obs_time=58.0 lb=None ub=None prio=36.6
+Observation 285: band=2 resource=GN obs_time=55.0 lb=None ub=None prio=15.8
+Observation 286: band=1 resource=GS obs_time=50.0 lb=None ub=None prio=36.6
+Observation 287: band=1 resource=GN obs_time=59.0 lb=None ub=None prio=36.6
+Observation 288: band=1 resource=GN obs_time=51.0 lb=None ub=None prio=36.6
+Observation 289: band=3 resource=GN obs_time=47.0 lb=162 ub=None prio=5.4
+Observation 290: band=1 resource=Both obs_time=50.0 lb=None ub=None prio=36.6
+Observation 291: band=3 resource=Both obs_time=51.0 lb=246 ub=None prio=5.4
+Observation 292: band=2 resource=GN obs_time=48.0 lb=None ub=430 prio=15.8
+Observation 293: band=2 resource=GS obs_time=59.0 lb=None ub=None prio=15.8
+Observation 294: band=1 resource=GN obs_time=59.0 lb=None ub=None prio=36.6
+Observation 295: band=3 resource=GN obs_time=47.0 lb=331 ub=None prio=5.4
+Observation 296: band=1 resource=GN obs_time=57.0 lb=None ub=None prio=36.6
+Observation 297: band=1 resource=GN obs_time=55.0 lb=None ub=None prio=36.6
+Observation 298: band=2 resource=GS obs_time=54.0 lb=None ub=None prio=15.8
+Observation 299: band=1 resource=GN obs_time=50.0 lb=None ub=None prio=36.6
+Observation 300: band=1 resource=GN obs_time=51.0 lb=None ub=None prio=36.6
+Observation 301: band=1 resource=GS obs_time=59.0 lb=None ub=None prio=36.6
+Observation 302: band=1 resource=GS obs_time=48.0 lb=None ub=None prio=36.6
+Observation 303: band=3 resource=GN obs_time=58.0 lb=None ub=None prio=5.4
+Observation 304: band=3 resource=GS obs_time=53.0 lb=485 ub=None prio=5.4
+Observation 305: band=2 resource=GN obs_time=54.0 lb=None ub=None prio=15.8
+Observation 306: band=3 resource=GN obs_time=53.0 lb=None ub=401 prio=5.4
+Observation 307: band=1 resource=GS obs_time=56.0 lb=None ub=None prio=36.6
+Observation 308: band=1 resource=Both obs_time=52.0 lb=None ub=348 prio=36.6
+Observation 309: band=2 resource=GS obs_time=47.0 lb=None ub=None prio=15.8
+Observation 310: band=2 resource=Both obs_time=46.0 lb=None ub=None prio=15.8
+Observation 311: band=3 resource=GS obs_time=57.0 lb=None ub=None prio=5.4
+Observation 312: band=1 resource=GN obs_time=59.0 lb=None ub=597 prio=36.6
+Observation 313: band=2 resource=GS obs_time=51.0 lb=None ub=None prio=15.8
+Observation 314: band=2 resource=GN obs_time=55.0 lb=None ub=None prio=15.8
+Observation 315: band=1 resource=GS obs_time=47.0 lb=365 ub=440 prio=36.6
+Observation 316: band=3 resource=GS obs_time=52.0 lb=79 ub=None prio=5.4
+Observation 317: band=3 resource=Both obs_time=53.0 lb=156 ub=None prio=5.4
+Observation 318: band=1 resource=GN obs_time=53.0 lb=504 ub=None prio=36.6
+Observation 319: band=3 resource=Both obs_time=49.0 lb=None ub=None prio=5.4
+Observation 320: band=1 resource=GS obs_time=57.0 lb=None ub=None prio=36.6
+Observation 321: band=2 resource=Both obs_time=53.0 lb=None ub=None prio=15.8
+Observation 322: band=1 resource=GS obs_time=56.0 lb=None ub=None prio=36.6
+Observation 323: band=2 resource=GS obs_time=51.0 lb=None ub=None prio=15.8
+Observation 324: band=2 resource=GS obs_time=58.0 lb=157 ub=597 prio=15.8
+Observation 325: band=3 resource=Both obs_time=56.0 lb=None ub=None prio=5.4
+Observation 326: band=1 resource=Both obs_time=57.0 lb=None ub=None prio=36.6
+Observation 327: band=3 resource=Both obs_time=53.0 lb=172 ub=None prio=5.4
+Observation 328: band=1 resource=GN obs_time=46.0 lb=None ub=None prio=36.6
+Observation 329: band=2 resource=GS obs_time=46.0 lb=None ub=None prio=15.8
+Observation 330: band=3 resource=GS obs_time=55.0 lb=None ub=None prio=5.4
+Observation 331: band=1 resource=Both obs_time=53.0 lb=None ub=520 prio=36.6
+Observation 332: band=1 resource=GN obs_time=58.0 lb=None ub=529 prio=36.6
+Observation 333: band=2 resource=Both obs_time=55.0 lb=None ub=None prio=15.8
+Observation 334: band=2 resource=GS obs_time=45.0 lb=None ub=None prio=15.8
+Observation 335: band=1 resource=GS obs_time=54.0 lb=384 ub=None prio=36.6
+Observation 336: band=1 resource=Both obs_time=54.0 lb=None ub=None prio=36.6
+Observation 337: band=2 resource=GN obs_time=52.0 lb=None ub=None prio=15.8
+Observation 338: band=3 resource=GS obs_time=53.0 lb=None ub=None prio=5.4
+Observation 339: band=1 resource=GN obs_time=53.0 lb=None ub=None prio=36.6
+Observation 340: band=3 resource=GN obs_time=52.0 lb=70 ub=None prio=5.4
+Observation 341: band=3 resource=GS obs_time=53.0 lb=493 ub=None prio=5.4
+Observation 342: band=1 resource=GS obs_time=47.0 lb=None ub=58 prio=36.6
+Observation 343: band=3 resource=GN obs_time=54.0 lb=None ub=414 prio=5.4
+Observation 344: band=3 resource=Both obs_time=57.0 lb=None ub=None prio=5.4
+Observation 345: band=1 resource=GS obs_time=53.0 lb=None ub=None prio=36.6
+Observation 346: band=1 resource=Both obs_time=45.0 lb=None ub=None prio=36.6
+Observation 347: band=2 resource=GS obs_time=48.0 lb=363 ub=None prio=15.8
+Observation 348: band=3 resource=GS obs_time=46.0 lb=587 ub=None prio=5.4
+Observation 349: band=3 resource=GS obs_time=51.0 lb=None ub=294 prio=5.4
+Observation 350: band=1 resource=Both obs_time=57.0 lb=None ub=None prio=36.6
+Observation 351: band=2 resource=GS obs_time=51.0 lb=None ub=None prio=15.8
+Observation 352: band=1 resource=GS obs_time=50.0 lb=None ub=None prio=36.6
+Observation 353: band=3 resource=Both obs_time=50.0 lb=None ub=None prio=5.4
+Observation 354: band=2 resource=GS obs_time=51.0 lb=None ub=None prio=15.8
+Observation 355: band=2 resource=GN obs_time=52.0 lb=None ub=157 prio=15.8
+Observation 356: band=2 resource=GN obs_time=56.0 lb=346 ub=None prio=15.8
+Observation 357: band=1 resource=Both obs_time=51.0 lb=None ub=None prio=36.6
+Observation 358: band=2 resource=Both obs_time=58.0 lb=None ub=None prio=15.8
+Observation 359: band=3 resource=GS obs_time=52.0 lb=None ub=None prio=5.4
+Observation 360: band=1 resource=GN obs_time=52.0 lb=None ub=None prio=36.6
+Observation 361: band=1 resource=GS obs_time=45.0 lb=None ub=95 prio=36.6
+Observation 362: band=2 resource=GN obs_time=56.0 lb=None ub=372 prio=15.8
+Observation 363: band=1 resource=GN obs_time=45.0 lb=None ub=None prio=36.6
+Observation 364: band=1 resource=GN obs_time=56.0 lb=None ub=None prio=36.6
+Observation 365: band=3 resource=Both obs_time=58.0 lb=None ub=None prio=5.4
+Observation 366: band=1 resource=GN obs_time=59.0 lb=None ub=None prio=36.6
+Observation 367: band=1 resource=GS obs_time=48.0 lb=None ub=None prio=36.6
+Observation 368: band=3 resource=GS obs_time=45.0 lb=None ub=None prio=5.4
+Observation 369: band=2 resource=Both obs_time=52.0 lb=None ub=None prio=15.8
+Observation 370: band=1 resource=GS obs_time=46.0 lb=None ub=None prio=36.6
+Observation 371: band=3 resource=GN obs_time=54.0 lb=None ub=212 prio=5.4
+Observation 372: band=3 resource=Both obs_time=50.0 lb=None ub=None prio=5.4
+Observation 373: band=1 resource=Both obs_time=46.0 lb=None ub=None prio=36.6
+Observation 374: band=3 resource=GS obs_time=52.0 lb=560 ub=None prio=5.4
+Observation 375: band=2 resource=GS obs_time=51.0 lb=517 ub=None prio=15.8
+Observation 376: band=1 resource=GS obs_time=48.0 lb=None ub=None prio=36.6
+Observation 377: band=2 resource=GN obs_time=52.0 lb=None ub=414 prio=15.8
+Observation 378: band=2 resource=GN obs_time=51.0 lb=None ub=None prio=15.8
+Observation 379: band=1 resource=GN obs_time=52.0 lb=None ub=None prio=36.6
+Observation 380: band=3 resource=GN obs_time=58.0 lb=None ub=307 prio=5.4
+Observation 381: band=3 resource=Both obs_time=55.0 lb=None ub=None prio=5.4
+Observation 382: band=1 resource=GS obs_time=51.0 lb=None ub=None prio=36.6
+Observation 383: band=1 resource=GN obs_time=51.0 lb=347 ub=None prio=36.6
+Observation 384: band=3 resource=Both obs_time=48.0 lb=None ub=555 prio=5.4
+Observation 385: band=3 resource=Both obs_time=54.0 lb=None ub=None prio=5.4
+Observation 386: band=3 resource=GS obs_time=59.0 lb=None ub=None prio=5.4
+Observation 387: band=3 resource=GS obs_time=45.0 lb=None ub=None prio=5.4
+Observation 388: band=2 resource=Both obs_time=56.0 lb=44 ub=248 prio=15.8
+Observation 389: band=2 resource=Both obs_time=54.0 lb=None ub=None prio=15.8
+Observation 390: band=3 resource=GS obs_time=59.0 lb=None ub=None prio=5.4
+Observation 391: band=3 resource=GS obs_time=52.0 lb=None ub=570 prio=5.4
+Observation 392: band=2 resource=Both obs_time=52.0 lb=None ub=None prio=15.8
+Observation 393: band=2 resource=GS obs_time=46.0 lb=116 ub=None prio=15.8
+Observation 394: band=2 resource=GS obs_time=56.0 lb=None ub=None prio=15.8
+Observation 395: band=3 resource=GN obs_time=45.0 lb=None ub=422 prio=5.4
+Observation 396: band=3 resource=Both obs_time=58.0 lb=None ub=None prio=5.4
+Observation 397: band=3 resource=GN obs_time=55.0 lb=501 ub=None prio=5.4
+Observation 398: band=3 resource=Both obs_time=46.0 lb=504 ub=None prio=5.4
+Observation 399: band=1 resource=GS obs_time=54.0 lb=None ub=None prio=36.6
+Observation 400: band=3 resource=GN obs_time=57.0 lb=None ub=None prio=5.4
+Observation 401: band=1 resource=Both obs_time=58.0 lb=None ub=None prio=36.6
+Observation 402: band=2 resource=GS obs_time=46.0 lb=None ub=None prio=15.8
+Observation 403: band=1 resource=GS obs_time=51.0 lb=None ub=None prio=36.6
+Observation 404: band=1 resource=Both obs_time=49.0 lb=None ub=323 prio=36.6
+Observation 405: band=3 resource=Both obs_time=54.0 lb=None ub=None prio=5.4
+Observation 406: band=3 resource=GS obs_time=51.0 lb=None ub=None prio=5.4
+Observation 407: band=1 resource=GN obs_time=51.0 lb=None ub=None prio=36.6
+Observation 408: band=1 resource=GN obs_time=59.0 lb=440 ub=None prio=36.6
+Observation 409: band=3 resource=GS obs_time=49.0 lb=None ub=None prio=5.4
+Observation 410: band=2 resource=Both obs_time=57.0 lb=None ub=None prio=15.8
+Observation 411: band=3 resource=Both obs_time=45.0 lb=None ub=None prio=5.4
+Observation 412: band=1 resource=GS obs_time=58.0 lb=264 ub=None prio=36.6
+Observation 413: band=2 resource=GN obs_time=54.0 lb=None ub=None prio=15.8
+Observation 414: band=1 resource=GS obs_time=54.0 lb=76 ub=None prio=36.6
+Observation 415: band=3 resource=GN obs_time=52.0 lb=228 ub=None prio=5.4
+Observation 416: band=3 resource=Both obs_time=48.0 lb=None ub=None prio=5.4
+Observation 417: band=1 resource=GS obs_time=48.0 lb=None ub=None prio=36.6
+Observation 418: band=2 resource=GN obs_time=49.0 lb=None ub=None prio=15.8
+Observation 419: band=3 resource=GN obs_time=48.0 lb=None ub=None prio=5.4
+Observation 420: band=1 resource=GS obs_time=53.0 lb=None ub=None prio=36.6
+Observation 421: band=1 resource=Both obs_time=58.0 lb=None ub=None prio=36.6
+Observation 422: band=2 resource=GN obs_time=46.0 lb=None ub=None prio=15.8
+Observation 423: band=1 resource=GN obs_time=56.0 lb=None ub=None prio=36.6
+Observation 424: band=3 resource=GS obs_time=58.0 lb=None ub=None prio=5.4
+Observation 425: band=3 resource=GS obs_time=46.0 lb=474 ub=None prio=5.4
+Observation 426: band=1 resource=GS obs_time=48.0 lb=None ub=None prio=36.6
+Observation 427: band=2 resource=GN obs_time=45.0 lb=None ub=None prio=15.8
+Observation 428: band=2 resource=GN obs_time=58.0 lb=None ub=None prio=15.8
+Observation 429: band=3 resource=Both obs_time=49.0 lb=254 ub=None prio=5.4
+Observation 430: band=3 resource=Both obs_time=47.0 lb=None ub=397 prio=5.4
+Observation 431: band=2 resource=GS obs_time=54.0 lb=None ub=None prio=15.8
+Observation 432: band=3 resource=GS obs_time=59.0 lb=None ub=383 prio=5.4
+Observation 433: band=1 resource=Both obs_time=45.0 lb=None ub=None prio=36.6
+Observation 434: band=2 resource=GN obs_time=48.0 lb=100 ub=None prio=15.8
+Observation 435: band=1 resource=GS obs_time=45.0 lb=None ub=None prio=36.6
+Observation 436: band=2 resource=GN obs_time=53.0 lb=None ub=None prio=15.8
+Observation 437: band=2 resource=GS obs_time=52.0 lb=None ub=None prio=15.8
+Observation 438: band=1 resource=Both obs_time=59.0 lb=None ub=None prio=36.6
+Observation 439: band=1 resource=GN obs_time=48.0 lb=None ub=None prio=36.6
+Observation 440: band=1 resource=Both obs_time=49.0 lb=None ub=427 prio=36.6
+Observation 441: band=3 resource=GN obs_time=48.0 lb=None ub=595 prio=5.4
+Observation 442: band=3 resource=GN obs_time=56.0 lb=None ub=None prio=5.4
+Observation 443: band=2 resource=Both obs_time=56.0 lb=471 ub=None prio=15.8
+Observation 444: band=1 resource=GN obs_time=51.0 lb=517 ub=None prio=36.6
+Observation 445: band=2 resource=Both obs_time=53.0 lb=None ub=88 prio=15.8
+Observation 446: band=3 resource=GN obs_time=59.0 lb=None ub=248 prio=5.4
+Observation 447: band=3 resource=GS obs_time=52.0 lb=None ub=None prio=5.4
+Observation 448: band=2 resource=Both obs_time=51.0 lb=None ub=161 prio=15.8
+Observation 449: band=3 resource=GN obs_time=56.0 lb=None ub=54 prio=5.4
+Observation 450: band=3 resource=GN obs_time=56.0 lb=None ub=None prio=5.4
+Observation 451: band=3 resource=GN obs_time=54.0 lb=None ub=None prio=5.4
+Observation 452: band=1 resource=Both obs_time=47.0 lb=None ub=None prio=36.6
+Observation 453: band=2 resource=Both obs_time=55.0 lb=None ub=490 prio=15.8
+Observation 454: band=3 resource=GN obs_time=54.0 lb=None ub=None prio=5.4
+Observation 455: band=2 resource=GN obs_time=52.0 lb=None ub=None prio=15.8
+Observation 456: band=3 resource=GS obs_time=50.0 lb=None ub=None prio=5.4
+Observation 457: band=2 resource=Both obs_time=51.0 lb=None ub=None prio=15.8
+Observation 458: band=3 resource=Both obs_time=58.0 lb=None ub=None prio=5.4
+Observation 459: band=2 resource=Both obs_time=47.0 lb=None ub=None prio=15.8
+Observation 460: band=3 resource=Both obs_time=57.0 lb=None ub=None prio=5.4
+Observation 461: band=3 resource=GS obs_time=59.0 lb=None ub=None prio=5.4
+Observation 462: band=2 resource=Both obs_time=53.0 lb=198 ub=None prio=15.8
+Observation 463: band=2 resource=Both obs_time=46.0 lb=105 ub=None prio=15.8
+Observation 464: band=1 resource=GN obs_time=59.0 lb=177 ub=None prio=36.6
+Observation 465: band=3 resource=GS obs_time=54.0 lb=None ub=16 prio=5.4
+Observation 466: band=1 resource=Both obs_time=59.0 lb=None ub=None prio=36.6
+Observation 467: band=2 resource=GN obs_time=51.0 lb=None ub=None prio=15.8
+Observation 468: band=2 resource=GN obs_time=54.0 lb=None ub=25 prio=15.8
+Observation 469: band=1 resource=GN obs_time=54.0 lb=None ub=None prio=36.6
+Observation 470: band=1 resource=GS obs_time=48.0 lb=None ub=None prio=36.6
+Observation 471: band=2 resource=Both obs_time=47.0 lb=None ub=None prio=15.8
+Observation 472: band=3 resource=Both obs_time=59.0 lb=None ub=None prio=5.4
+Observation 473: band=1 resource=GS obs_time=59.0 lb=None ub=None prio=36.6
+Observation 474: band=3 resource=GN obs_time=53.0 lb=317 ub=None prio=5.4
+Observation 475: band=3 resource=Both obs_time=48.0 lb=None ub=None prio=5.4
+Observation 476: band=1 resource=GS obs_time=55.0 lb=None ub=None prio=36.6
+Observation 477: band=2 resource=Both obs_time=59.0 lb=None ub=None prio=15.8
+Observation 478: band=1 resource=GS obs_time=57.0 lb=None ub=None prio=36.6
+Observation 479: band=3 resource=GS obs_time=53.0 lb=None ub=None prio=5.4
+Observation 480: band=2 resource=Both obs_time=47.0 lb=None ub=None prio=15.8
+Observation 481: band=1 resource=Both obs_time=55.0 lb=None ub=None prio=36.6
+Observation 482: band=1 resource=Both obs_time=57.0 lb=190 ub=None prio=36.6
+Observation 483: band=2 resource=GS obs_time=55.0 lb=None ub=None prio=15.8
+Observation 484: band=2 resource=GS obs_time=49.0 lb=None ub=None prio=15.8
+Observation 485: band=3 resource=Both obs_time=57.0 lb=41 ub=None prio=5.4
+Observation 486: band=1 resource=GN obs_time=51.0 lb=None ub=None prio=36.6
+Observation 487: band=1 resource=GS obs_time=55.0 lb=None ub=401 prio=36.6
+Observation 488: band=3 resource=Both obs_time=56.0 lb=None ub=422 prio=5.4
+Observation 489: band=1 resource=GN obs_time=54.0 lb=None ub=304 prio=36.6
+Observation 490: band=2 resource=GS obs_time=59.0 lb=None ub=None prio=15.8
+Observation 491: band=3 resource=GN obs_time=56.0 lb=None ub=None prio=5.4
+Observation 492: band=1 resource=Both obs_time=59.0 lb=212 ub=None prio=36.6
+Observation 493: band=1 resource=GN obs_time=54.0 lb=None ub=None prio=36.6
+Observation 494: band=1 resource=GS obs_time=55.0 lb=52 ub=None prio=36.6
+Observation 495: band=1 resource=GN obs_time=55.0 lb=None ub=None prio=36.6
+Observation 496: band=3 resource=GN obs_time=46.0 lb=None ub=331 prio=5.4
+Observation 497: band=1 resource=GS obs_time=54.0 lb=None ub=212 prio=36.6
+Observation 498: band=2 resource=GS obs_time=50.0 lb=None ub=None prio=15.8
+Observation 499: band=3 resource=GN obs_time=46.0 lb=None ub=None prio=5.4
+
+
+*** INITIAL CHROMOSOME POPULATION ***
+GS [(0, 440), (49.0, 452), (96.0, 466), (155.0, 470), (203.0, 473), (262.0, 476), (317.0, 478), (374.0, 481), (429.0, 482), (486.0, 492), (545.0, 494)]: 36.60000000000001
+GS [(0, 342), (47.0, 345), (100.0, 352), (150.0, 367), (198.0, 370), (244.0, 373), (290.0, 376), (338.0, 433), (384, 335), (438.0, 382), (489.0, 399), (543.0, 403)]: 36.173
+GS [(0, 227), (55.0, 247), (108.0, 256), (160.0, 264), (216.0, 265), (273.0, 266), (323, 268), (376.0, 271), (433.0, 284), (491.0, 286), (541.0, 290)]: 35.929
+GS [(0, 95), (56.0, 101), (113.0, 114), (172.0, 117), (231.0, 120), (277.0, 125), (330.0, 134), (380.0, 137), (429.0, 138), (481.0, 140), (532.0, 145)]: 35.684999999999995
+GN [(0, 179), (58.0, 186), (107.0, 195), (164.0, 208), (219.0, 215), (267.0, 220), (326.0, 222), (383.0, 232), (433.0, 239), (480.0, 244), (527.0, 250)]: 35.562999999999995
+GS [(0, 361), (45.0, 401), (103.0, 404), (152.0, 414), (206.0, 417), (264, 412), (322.0, 420), (375.0, 421), (433.0, 426), (481.0, 435), (526.0, 438)]: 35.075
+GS [(0, 162), (48.0, 178), (100.0, 187), (153.0, 188), (208.0, 191), (257.0, 194), (304.0, 216), (367, 199), (437, 180), (491.0, 210), (540.0, 219)]: 34.89200000000001
+GN [(0, 8), (56.0, 11), (104.0, 17), (159.0, 20), (213.0, 24), (261.0, 25), (318.0, 28), (372.0, 30), (423.0, 31), (469.0, 32), (522.0, 35)]: 34.708999999999996
+GN [(0, 44), (48.0, 51), (99.0, 52), (144.0, 102), (200.0, 107), (259.0, 155), (307, 86), (355.0, 108), (410.0, 109), (467.0, 111), (535, 66)]: 34.404
+GN [(0, 269), (55.0, 276), (106.0, 287), (165.0, 288), (216.0, 294), (275.0, 296), (345, 275), (401.0, 297), (456.0, 299), (506.0, 300)]: 33.184000000000005
+GS [(0, 2), (47.0, 37), (102.0, 47), (148.0, 50), (203.0, 55), (287, 40), (343.0, 68), (402.0, 79), (453.0, 90), (506.0, 92)]: 32.940000000000005
+GN [(0, 99), (52.0, 136), (104.0, 144), (157, 132), (206.0, 149), (261.0, 152), (357, 160), (425, 112), (476.0, 148), (532.0, 163)]: 32.452
+GS [(0, 301), (59.0, 302), (107.0, 307), (163.0, 308), (215.0, 320), (272.0, 322), (359, 281), (405.0, 315), (452.0, 326), (509.0, 331)]: 32.391000000000005
+GN [(0, 312), (59.0, 328), (105.0, 332), (163.0, 336), (217.0, 339), (270.0, 346), (315.0, 350), (372.0, 357), (423.0, 360), (504, 318)]: 32.208
+GN [(0, 363), (45.0, 364), (101.0, 366), (160.0, 379), (212.0, 407), (263.0, 423), (347, 383), (440, 408), (499.0, 439), (547.0, 444)]: 32.208
+GN [(0, 469), (54.0, 486), (105.0, 489), (177, 464), (236.0, 493), (290.0, 495), (345.0, 6), (400.0, 10), (456.0, 13), (505.0, 22), (555.0, 121)]: 26.662
+GS [(0, 487), (55.0, 497), (109.0, 0), (154.0, 1), (206.0, 7), (264.0, 21), (316.0, 34), (363.0, 41), (412.0, 43), (458.0, 48), (512.0, 54)]: 18.499000000000002
+GN [(0, 206), (50.0, 292), (98.0, 305), (152.0, 314), (207.0, 321), (260.0, 333), (315.0, 337), (367.0, 356), (423.0, 369), (475.0, 378), (526.0, 389)]: 15.273333333333337
+GS [(0, 139), (55.0, 147), (107.0, 151), (162.0, 161), (219.0, 168), (268.0, 176), (318.0, 184), (372.0, 196), (429.0, 203), (474.0, 209), (528, 166)]: 15.194333333333335
+GN [(0, 355), (52.0, 362), (108.0, 377), (160.0, 388), (216.0, 392), (268.0, 410), (325.0, 413), (379.0, 418), (428.0, 422), (474.0, 427), (519.0, 428)]: 15.194333333333335
+GN [(0, 207), (52.0, 237), (110.0, 243), (166.0, 253), (216.0, 254), (273.0, 260), (323.0, 262), (368.0, 270), (415.0, 277), (469.0, 278), (520.0, 285)]: 15.141666666666667
+GS [(0, 16), (48.0, 49), (97.0, 61), (155.0, 67), (213.0, 73), (270.0, 78), (320.0, 81), (375.0, 83), (420.0, 91), (474.0, 96), (521.0, 98)]: 14.904666666666666
+GS [(0, 182), (50.0, 223), (95.0, 310), (141, 213), (188.0, 241), (241, 221), (296.0, 226), (348.0, 229), (406.0, 293), (465.0, 298), (519.0, 309)]: 14.799333333333333
+GS [(0, 394), (56.0, 402), (102.0, 431), (156.0, 437), (208.0, 453), (263.0, 457), (314.0, 459), (361.0, 462), (414.0, 463), (460.0, 471), (517, 375)]: 14.694000000000003
+GN [(19, 57), (77.0, 131), (127.0, 157), (173.0, 158), (223.0, 159), (275.0, 171), (321.0, 185), (367, 115), (417.0, 172), (471, 87), (528.0, 129)]: 14.641333333333336
+GS [(0, 313), (51.0, 323), (102.0, 329), (157, 324), (215.0, 334), (270, 280), (317.0, 393), (363, 347), (411.0, 351), (462.0, 354), (513.0, 358)]: 14.536000000000001
+GN [(0, 153), (58.0, 181), (105.0, 200), (153.0, 202), (207.0, 225), (252.0, 228), (309.0, 235), (354.0, 236), (438, 169), (507, 177), (553.0, 261)]: 14.272666666666668
+GN [(0, 29), (56.0, 36), (110.0, 39), (163.0, 56), (218.0, 63), (264.0, 65), (311.0, 74), (361.0, 103), (407.0, 104), (509, 69)]: 13.640666666666668
+GS [(0, 70), (56.0, 94), (107.0, 122), (156.0, 126), (236, 116), (283.0, 133), (365, 106), (422.0, 141), (468.0, 143), (518.0, 146)]: 13.351
+GN [(0, 436), (53.0, 480), (100, 434), (148.0, 448), (199.0, 455), (251.0, 467), (302.0, 477), (361.0, 4), (410.0, 9), (471, 443), (527.0, 19)]: 12.268000000000002
+GS [(0, 445), (53.0, 483), (108.0, 484), (157.0, 490), (216.0, 498), (266.0, 3), (325.0, 5), (377.0, 12), (423.0, 14), (481.0, 23), (539.0, 33)]: 9.893666666666666
+GN [(0, 468), (54.0, 15), (108.0, 26), (162.0, 27), (208.0, 42), (255.0, 45), (313.0, 46), (364.0, 53), (412.0, 59), (470.0, 71), (521.0, 75)]: 6.0840000000000005
+GN [(0, 76), (46.0, 77), (103.0, 82), (148.0, 84), (206.0, 97), (261.0, 105), (318.0, 113), (375.0, 119), (434.0, 135), (480.0, 142), (534.0, 164)]: 5.301
+GN [(0, 303), (58.0, 306), (111.0, 340), (163.0, 343), (217.0, 344), (274.0, 353), (324.0, 365), (382.0, 372), (432.0, 381), (487.0, 384), (535.0, 385)]: 5.301
+GS [(0, 248), (55.0, 272), (100.0, 274), (158.0, 279), (213.0, 311), (270.0, 316), (322.0, 317), (375.0, 319), (424.0, 325), (485, 304), (538.0, 327)]: 5.273999999999999
+GS [(0, 192), (49.0, 212), (105.0, 242), (154.0, 245), (204.0, 246), (261.0, 252), (310.0, 255), (365.0, 257), (414.0, 263), (470.0, 267), (527.0, 273)]: 5.229
+GS [(0, 38), (55.0, 58), (108.0, 60), (164.0, 80), (219.0, 85), (277, 62), (322.0, 89), (379.0, 93), (429.0, 100), (475.0, 110), (528.0, 118)]: 5.175000000000001
+GS [(0, 189), (48.0, 190), (96.0, 201), (149.0, 214), (207.0, 218), (270, 211), (321.0, 224), (366.0, 230), (423.0, 231), (479.0, 234), (529.0, 240)]: 5.175000000000001
+GS [(0, 88), (59.0, 123), (106.0, 124), (153.0, 128), (209.0, 130), (254.0, 150), (302.0, 156), (358.0, 165), (415.0, 167), (474.0, 170), (527.0, 174)]: 5.175
+GS [(0, 330), (55.0, 338), (108.0, 349), (159.0, 359), (211.0, 368), (256.0, 386), (315.0, 387), (360.0, 390), (419.0, 391), (493, 341), (546.0, 398)]: 5.130000000000001
+GN [(0, 154), (74, 127), (125.0, 173), (173.0, 175), (222.0, 183), (279.0, 193), (329.0, 197), (387.0, 198), (434.0, 204), (484.0, 205), (532.0, 217)]: 5.112
+GN [(0, 371), (54.0, 380), (112.0, 395), (157.0, 396), (215.0, 400), (272.0, 405), (326.0, 411), (371.0, 415), (423.0, 416), (501, 397)]: 4.734000000000001
+GS [(0, 406), (51.0, 409), (100.0, 424), (158.0, 430), (205.0, 475), (254, 429), (303.0, 432), (362.0, 447), (414.0, 456), (474, 425), (520.0, 458)]: 5.103000000000001
+GN [(0, 238), (66, 251), (114.0, 282), (169.0, 283), (227.0, 289), (274.0, 291), (352, 233), (430, 249), (479.0, 258), (524.0, 295)]: 4.500000000000001
+GN [(0, 419), (48.0, 441), (96.0, 442), (152.0, 446), (211.0, 450), (267.0, 451), (321.0, 454), (375.0, 460), (432.0, 472), (491.0, 474), (544.0, 491)]: 5.4
+GS [(0, 461), (59.0, 479), (112.0, 485), (169.0, 488)]: 2.0250000000000004
+GN [(0, 449), (56.0, 496), (102.0, 499)]: 1.332
+GS [(0, 465)]: 0.48600000000000004
+Best fitnesses
+	GN: 35.562999999999995	[(0, 179), (58.0, 186), (107.0, 195), (164.0, 208), (219.0, 215), (267.0, 220), (326.0, 222), (383.0, 232), (433.0, 239), (480.0, 244), (527.0, 250)]
+	GS: 36.60000000000001	[(0, 440), (49.0, 452), (96.0, 466), (155.0, 470), (203.0, 473), (262.0, 476), (317.0, 478), (374.0, 481), (429.0, 482), (486.0, 492), (545.0, 494)]
+Best fitnesses: 1248
+	GN: 35.562999999999995	[(0, 179), (58.0, 186), (107.0, 195), (164.0, 208), (219.0, 215), (267.0, 220), (326.0, 222), (383.0, 232), (433.0, 239), (480.0, 244), (527.0, 250)]
+	GS: 36.600000000000016	[(0, 227), (55.0, 101), (112.0, 256), (164.0, 117), (223.0, 265), (280.0, 125), (333.0, 414), (387.0, 187), (440.0, 191), (489.0, 216), (546.0, 180)]
+
+
+*** RESULTS ***
+Gemini North:
+	At time   0: Observation  179, band=1, resource=GN  , obs_time= 58, lb=None, ub=None, priority=36.6
+	At time  58: Observation  186, band=1, resource=GN  , obs_time= 49, lb=None, ub=None, priority=36.6
+	At time 107: Observation  195, band=1, resource=GN  , obs_time= 57, lb=None, ub=None, priority=36.6
+	At time 164: Observation  208, band=1, resource=GN  , obs_time= 55, lb=None, ub=None, priority=36.6
+	At time 219: Observation  215, band=1, resource=GN  , obs_time= 48, lb=None, ub=None, priority=36.6
+	At time 267: Observation  220, band=1, resource=Both, obs_time= 59, lb=None, ub=None, priority=36.6
+	At time 326: Observation  222, band=1, resource=Both, obs_time= 57, lb=None, ub=None, priority=36.6
+	At time 383: Observation  232, band=1, resource=GN  , obs_time= 50, lb=None, ub=None, priority=36.6
+	At time 433: Observation  239, band=1, resource=Both, obs_time= 47, lb= 161, ub=None, priority=36.6
+	At time 480: Observation  244, band=1, resource=Both, obs_time= 47, lb=None, ub=None, priority=36.6
+	At time 527: Observation  250, band=1, resource=Both, obs_time= 56, lb=None, ub=None, priority=36.6
+	Gap of   17 mins
+	Usage:  583 mins, 97.16666666666667%, Fitness: 402.6000000000001
+Gemini South:
+	At time   0: Observation  227, band=1, resource=GS  , obs_time= 55, lb=None, ub=None, priority=36.6
+	At time  55: Observation  101, band=1, resource=GS  , obs_time= 57, lb=None, ub=None, priority=36.6
+	At time 112: Observation  256, band=1, resource=Both, obs_time= 52, lb=None, ub=None, priority=36.6
+	At time 164: Observation  117, band=1, resource=Both, obs_time= 59, lb=   3, ub=None, priority=36.6
+	At time 223: Observation  265, band=1, resource=GS  , obs_time= 57, lb=None, ub= 573, priority=36.6
+	At time 280: Observation  125, band=1, resource=GS  , obs_time= 53, lb=None, ub=None, priority=36.6
+	At time 333: Observation  414, band=1, resource=GS  , obs_time= 54, lb=  76, ub=None, priority=36.6
+	At time 387: Observation  187, band=1, resource=Both, obs_time= 53, lb=None, ub=None, priority=36.6
+	At time 440: Observation  191, band=1, resource=Both, obs_time= 49, lb=None, ub=None, priority=36.6
+	At time 489: Observation  216, band=1, resource=Both, obs_time= 57, lb=None, ub=None, priority=36.6
+	At time 546: Observation  180, band=1, resource=GS  , obs_time= 54, lb= 437, ub=None, priority=36.6
+	Usage:  600 mins, 100.0%, Fitness: 402.6000000000001
+Time: 45.269083957999996 s
