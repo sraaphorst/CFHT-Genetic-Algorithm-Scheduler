@@ -36,6 +36,7 @@ class Chromosome:
         self.resource = resource
         self.start_time = start_time
         self.stop_time = stop_time
+        # print(start_time, stop_time) Should be 0 519
 
         # We need to maintain a list of what times are used up and what are free, so
         # we schedule this list with entries of (start_time, obs_num), and from there,
@@ -142,7 +143,7 @@ class Chromosome:
             # print(obs.time_priorities)
             time_score = obs.time_priorities[int(time - obs.lb_time_constraint)]
             score += priority * length * time_score
-        return score / (DEFAULT_STOP_TIME - DEFAULT_START_TIME)
+        return score / (self.stop_time - self.start_time)
 
         # return sum(self.observations[idx].priority * self.observations[idx].obs_time for _, idx in self.schedule) / \
         #        (DEFAULT_STOP_TIME - DEFAULT_START_TIME)
@@ -603,8 +604,11 @@ if __name__ == '__main__':
     c_gn, c_gs = ga.run(DEFAULT_NUM_ITERATIONS)
     end_time = time.monotonic()
     print('\n\n*** RESULTS ***')
+    print(c_gn)
     if c_gn is not None:
         print(c_gn.detailed_string("Gemini North:"))
+    print()
+    print(c_gs)
     if c_gs is not None:
         print(c_gs.detailed_string("Gemini South:"))
     print(f"Time: {end_time - start_time} s")
