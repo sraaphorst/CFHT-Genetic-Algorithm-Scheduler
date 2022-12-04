@@ -1,4 +1,4 @@
-# CFHT genetic algorithm scheduler
+# CFHT Genetic Algorithm Scheduler
 
 A prototype of the genetic algorithm scheduler proposed by CFHT, implemented as a part of a trade study on automated scheduler algorithms for Gemini Observatory.
 
